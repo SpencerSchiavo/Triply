@@ -46,7 +46,7 @@ public class DistanceMatrix {
         String urlString = "https://maps.googleapis.com/maps/api/distancematrix/json?" +
                 "units=imperial&origins=" + citiesForUrl +
                 "&destinations=" + citiesForUrl +
-                "&key=" + "AIzaSyD7E6K0slUQAiB6NX_pyTPe8VcTuJ9iaew";
+                "&key=" + "### CENSORED ###";
         obj = readJsonFromUrl(urlString);
         JSONArray arr = obj.getJSONArray("rows");
         for (int i = 0; i < arr.length(); i++) {
